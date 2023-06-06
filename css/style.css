@@ -1,0 +1,204 @@
+body {
+     font-family: 'Greycliff CF', sans-serif;
+     color: #555555;
+     font-size: 15px;
+}
+ .logo {
+     width: 47px;
+}
+/* Nav */
+ .alist-nav {
+     padding: 10px 65px 10px 35px;
+}
+ .alist-nav .nav-link {
+     color: #575757 !important;
+     font-size: 20px;
+     font-family: 'Greycliff CF Demi', sans-serif;
+}
+ .alist-nav .signup {
+     padding: 6px 30px;
+     background: #4E4E4E;
+     border: 0;
+     box-shadow: 0px 3px 6px #00000029;
+     font-size: 20px;
+     font-family: 'Greycliff CF Demi', sans-serif;
+}
+/* block-addons */
+ .addon-section {
+     padding-bottom: 140px;
+}
+ .grid-container {
+     gap: 10px;
+     display: grid;
+     grid-template-areas: 'block-addons01 block-addons02' 'block-addons03 block-addons04' 'block-addons05 block-addons06' 'block-addons07 block-addons07' 'block-addons08 block-addons08';
+     width: 64%;
+     margin: 0 auto;
+}
+ .item1 {
+     grid-area: block-addons01;
+}
+ .item2 {
+     grid-area: block-addons02;
+}
+ .item3 {
+     grid-area: block-addons03;
+}
+ .item4 {
+     grid-area: block-addons04;
+}
+ .item5 {
+     grid-area: block-addons05;
+}
+ .item6 {
+     grid-area: block-addons06;
+}
+ .item7 {
+     grid-area: block-addons07;
+}
+ .item8 {
+     grid-area: block-addons08;
+}
+ .selected {
+     background-color: #00A4B6;
+}
+ .block-addons.selected h3, .block-addons.selected p {
+     color: white;
+}
+ .block-addons-icon {
+     background-size: cover;
+     background-position: 0 0px;
+}
+ .icon1 {
+     background-image: url('../icons/Brand Removal.svg');
+     width: 42px;
+     height: 44px;
+}
+ .icon2 {
+     background-image: url('../icons/content usage.svg');
+     width: 28px;
+     height: 38px;
+}
+ .icon3 {
+     background-image: url('../icons/My Hashtags.svg');
+     width: 42px;
+     height: 41px;
+}
+ .icon4 {
+     background-image: url('../icons/filter.svg');
+     width: 28px;
+     height: 28px;
+}
+ .icon5 {
+     background-image: url('../icons/tap-discount.svg');
+     width: 55px;
+     height: 21px;
+     margin-top: 10px;
+     margin-right: 2px;
+}
+ .icon6 {
+     background-image: url('../icons/select 2.svg');
+     width: 28px;
+     height: 32px;
+}
+ .icon7 {
+     background-image: url('../icons/priority pass.svg');
+     width: 40px;
+     height: 55px;
+}
+ .item8 button {
+     padding: 10px 20px !important;
+     background: #606060;
+     box-shadow: 0px 3px 6px #00000038;
+     border-radius: 10px;
+     font-weight: bold;
+     font-family: 'Greycliff CF Demi', sans-serif;
+     font-size: 18px;
+}
+ .block-addons.selected .icon1 {
+     background-image: url('../icons/Brand Removal-white.svg');
+}
+ .block-addons.selected .icon2 {
+     background-image: url('../icons/content usage-white.svg');
+}
+ .block-addons.selected .icon3 {
+     background-image: url('../icons/My Hashtags-white.svg');
+}
+ .block-addons.selected .icon4 {
+     background-image: url('../icons/filter-white.svg');
+}
+ .block-addons.selected .icon5 {
+     background-image: url('../icons/tap-discount-white.svg');
+}
+ .block-addons.selected .icon6 {
+     background-image: url('../icons/select 2-white.svg');
+}
+ .block-addons.selected .icon7 {
+     background-image: url('../icons/priority pass-white.svg');
+}
+ .block-addons {
+     background-image: linear-gradient(#d5d5d529, #d5d5d529);
+     background-size: 0 100%, auto;
+     background-repeat: no-repeat;
+     background-position: center center;
+     transition: all 0.2s ease-out;
+     border-radius: 25px !important;
+     box-shadow: 0px 2px 6px #00000029 !important;
+     cursor: pointer;
+}
+ .block-addons:hover {
+     background-size: 100% 100%, auto;
+}
+ .block-addons h3 {
+     font-size: 20px;
+     margin-left: 13px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+ .title-addon {
+     font-size: 43px;
+     color: #474747;
+     font-weight: bold;
+}
+/* Footer */
+ footer {
+     background: #F0F0F0;
+}
+ footer a.nav-link {
+     font-size: 18px;
+     color: #3A3A3A !important;
+}
+ .powered a {
+     color: #00A0B2;
+     text-decoration: none;
+}
+/* Media Queries */
+ @media screen and (max-width: 992px) {
+     .navbar-toggler:focus {
+         box-shadow: none;
+    }
+     .navbar-light .navbar-toggler {
+         border: none !important;
+    }
+     .addon-section {
+         padding-bottom: 75px;
+         padding-top: 0 !important;
+    }
+     .title-addon {
+         font-size: 25px !important;
+    }
+     .navbar-light .navbar-toggler-icon {
+         background-image: url('../icons/breadcrumbs.svg');
+    }
+     .alist-nav {
+         padding: 10px !important;
+    }
+     .item8 button {
+         border-radius: 25px !important;
+    }
+}
+ @media (max-width: 768px) {
+     .grid-container {
+         width: 100%;
+         grid-template-areas: 'block-addons01' 'block-addons02' 'block-addons03' 'block-addons04' 'block-addons05' 'block-addons06' 'block-addons07' 'block-addons08';
+    }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.554" height="80.995" viewBox="0 0 85.554 80.995">
+  <defs>
+    <filter id="Subtraction_4" x="0" y="0" width="85.554" height="80.995" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="popular" transform="translate(-875.446 -327)">
+    <g transform="matrix(1, 0, 0, 1, 875.45, 327)" filter="url(#Subtraction_4)">
+      <path id="Subtraction_4-2" data-name="Subtraction 4" d="M-4357.988,1615.958l-67.554-62.995c5.478.026,16.225.073,26.658.073,5.206,0,9.785-.012,13.609-.036l27.286,25.446v37.511Z" transform="translate(4434.54 -1546.96)" fill="#00a4b6"/>
+    </g>
+    <text id="Popular-2" data-name="Popular" transform="matrix(0.719, 0.695, -0.695, 0.719, 911.857, 345.389)" fill="#fff" font-size="11" font-family="GreycliffCF-Medium, Greycliff CF" font-weight="500" letter-spacing="0.012em"><tspan x="0" y="0">Popular</tspan></text>
+  </g>
+</svg>
