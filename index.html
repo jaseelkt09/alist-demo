@@ -1,191 +1,491 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-      <link rel="stylesheet" href="font/stylesheet.css">
-      <link rel="stylesheet" href="css/style.css">
-      <title>Alist</title>
-   </head>
-   <body>
-      <!-- Header -->
-      <header class="py-4">
-         <div class="container py-2">
-            <nav class="navbar navbar-expand-lg navbar-light alist-nav">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                  <img class="logo" src="icons/Logo.svg" alt="Logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Partners</a>
-                        </li>
-                        <li class="nav-item mx-lg-3">
-                           <a class="nav-link" href="#">For brands</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">For creators</a>
-                        </li>
-                     </ul>
-                     <div class="d-flex">
-                        <button class="btn btn-dark rounded-pill btn-sm signup" type="submit">Sign up</button>
-                     </div>
-                  </div>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <!-- Header End -->
-      <!-- Addon-section -->
-      <section class="pt-5 addon-section">
-         <div class="container">
-            <h2 class="title-addon text-center mb-5 mt-3 pt-1">Select add-ons</h2>
-            <div class="grid-container pt-1">
-               <div class="item1 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon1 me-3"></div>
-                     <h3 class="mb-0">Brand Removal</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Remove the @<b>alist.ae</b> branding from some or all of the creator's generated content for your campaign.
-                  </p>
-               </div>
-               <div class="item2 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon2 me-3"></div>
-                     <h3 class="mb-0">Content Usage</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Own the usage rights to the creator's generated content for your personal or commercial use.
-                  </p>
-               </div>
-               <div class="item3 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon3 me-3"></div>
-                     <h3 class="mb-0">My Hashtags</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Add relative hashtags to some or all of the creator's generated content for your campaign.
-                  </p>
-               </div>
-               <div class="item4 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon4 me-3"></div>
-                     <h3 class="mb-0">Filter</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Make your campaign only available to a certain group by adding one or more filters such as location, language, age, gender and more.
-                  </p>
-               </div>
-               <div class="item5 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon5"></div>
-                     <h3 class="mb-0">Tap / Discount</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Add Tap (previously swipe-up) and/or a discount code to some or all of the creator's generated content for your campaign.
-                  </p>
-               </div>
-               <div class="item6 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon6 me-3"></div>
-                     <h3 class="mb-0">Select</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Pre-select the creators you wish to work with in advance of your campaign's activation.
-                  </p>
-               </div>
-               <div class="item7 pt-3 p-4 block-addons">
-                  <div class="d-flex align-items-center">
-                     <div class="block-addons-icon icon7 me-3"></div>
-                     <h3 class="mb-0">Priority Pass</h3>
-                  </div>
-                  <p class="mb-0 mt-3">
-                     Speed up your campaign's activation.<br>
-                     Get access to live updates, the daily number of redemptions, uploaded contents and mid-campaign amendments through your dedicated account manager available to you throughout the campaign.
-                  </p>
-               </div>
-               <div class="item8 mt-2 d-flex flex-column flex-sm-row-reverse">
-                  <button type="button" class="btn btn-dark">
-                  Continue <i class="bi bi-arrow-right d-none d-lg-inline-block"></i>
-                  </button>
-               </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Alist</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="alist_main_head">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Brands <i class="bi bi-chevron-down"></i> </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Dummy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Creators <i class="bi bi-chevron-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Dummy</a>
+                </li>
+               <!--  <li>
+                  <a class="dropdown-item" href="#">Dummy</a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav_selected" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <span class="text-white">EN </span>  
+               <i class="bi bi-chevron-down text-white"></i>
+             </a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">EN</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">AR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="banner_sec position-absolute w-100 h-100 col-md-5 p-lg-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="banner_block position-relative">
+      <div class="anim1"></div>
+      <div class="anim2"></div>
+      <div class="anim3"></div>
+      <div class="anim4"></div>
+      <div class="anim5"></div>
+      <div class="anim6"></div>
+      <h1 class="fw-bold text-center">
+        <div>UAE’s Largest Platform</div>
+        <div>for brands & creators</div>
+        <div>to collaborate.</div>
+      </h1>
+      <div class="banner_counter d-flex justify-content-center pt-5">
+        <div class="counter-item text-left">
+          <div class="counter_label">Creators</div>
+          <h3 class="counter fw-bold" data-count="35">35k+</h3>
+        </div>
+        <div class="counter-item text-left">
+          <div class="counter_label">Brands</div>
+          <h3 class="counter fw-bold" data-count="2.5">35k+</h3>
+        </div>
+        <div class="counter-item text-left">
+          <div class="counter_label">Campaigns</div>
+          <h3 class="counter fw-bold" data-count="50">50k+</h3>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center als_sm_btn flex-column flex-sm-row pt-4">
+        <button class="btn btn-dark rounded-pill btn-sm primary_btn" type="submit"> I'm a brand </button>
+        <button class="btn btn-dark rounded-pill btn-sm secondary_btn" type="submit"> I'm a creator </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header End -->
+
+<!-- Brands -->
+<section class="brand_sec pt-5 bg-white position-relative">
+  <div class="container">
+    <h2 class="title_head mb-0 text-center fw-bold pb-5">Brands</h2>
+    <div class="brands_block1 owl-carousel owl-theme pb-5">
+      <div class="item">
+        <img src="images/brands/brand01.png" alt="image" />
+      </div>
+      <div class="item">
+        <img src="images/brands/brand02.png" alt="image" />
+      </div>
+      <div class="item">
+        <img src="images/brands/brand03.png" alt="image" />
+      </div>
+      <div class="item">
+        <img src="images/brands/brand04.png" alt="image" />
+      </div>
+      <div class="item">
+        <img src="images/brands/brand05.png" alt="image" />
+      </div>
+      <div class="item">
+        <img src="images/brands/brand06.png" alt="image" />
+      </div>
+    </div>
+    <div class="brands_block2 py-5">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="pb-5 pb-sm-0">
+            <img src="images/dashboard.png" class="img-fluid box-sdw">
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center flex-column">
+          <h2 class="title_head mb-0 fw-bold">As a <span class="text-muted">brand</span>
+          </h2>
+          <h2 class="title_head">fuel your business growth</h2>
+          <p class="lead mt-3">
+            by connecting with thousands of social media creators (influencers) instantly. Let hundreds of creators endorse your brand, giving it the exposure it deserves.
+          </p>
+          <div class="d-flex  als_sm_btn flex-column flex-sm-row pt-4">
+            <button class="btn btn-dark rounded-pill btn-sm primary_btn" type="submit"> 
+              Get a free demo 
+            </button>
+            <button class="btn btn-dark rounded-pill btn-sm secondary_btn" type="submit"> 
+              Learn more 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Brands End -->
+
+<!-- Brands loves -->
+<div class="brand_loves pb-5 pt-5">
+  <div class="container">
+    <h2 class="title_head mb-0 text-center fw-bold pb-5">Brands love us</h2>
+    <div class="owl-carousel owl-theme">
+      <div class="item p-1">
+        <div class="card shadow-sm">
+          <div class="card-body py-4">
+            <img src="images/quote_icon.png" alt="..." class="quote_icon pb-3">
+            <p class="card-text"> 
+              No other platform compares. Their attention to detail, reliable communication, and ability to match us with influential creators have made all the difference! 
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-4 ">
+              <div class="flex-shrink-0">
+                <img src="images/avatar01.png" alt="..." class="rounded-circle avatar border">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="fw-bold">Emily Watson</div>
+                <div>Marketing Director - Brand</div>
+              </div>
             </div>
-         </div>
-      </section>
-      <!-- Addon-section end -->
-      <!-- Footer -->
-      <footer class="d-none d-lg-block mt-5 py-5">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                  <img src="icons/logo-footer.svg" alt="Logo">
-                  </a>
-                  <div class="navbar-collapse">
-                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">Privacy</a>
-                        </li>
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">Terms</a>
-                        </li>
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item px-3">
-                           <a class="nav-link" href="#">Contact</a>
-                        </li>
-                     </ul>
-                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">
-                           <img src="icons/insta.svg" alt="Instagram">
-                           </a>
-                        </li>
-                        <li class="nav-item mx-3">
-                           <a class="nav-link" href="#">
-                           <img src="icons/fb.svg" alt="Facebook">
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">
-                           <img src="icons/linkedin.svg" alt="LinkedIn">
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-            <div class="text-center pt-4 pb-2">
-               ©alist.ae 2022. All Rights Reserved
+          </div>
+        </div>
+      </div>
+      <div class="item p-1">
+        <div class="card shadow-sm">
+          <div class="card-body py-4">
+            <img src="images/quote_icon.png" alt="..." class="quote_icon pb-3">
+            <p class="card-text"> 
+              Our go-to platform for influencer collaborations. Their dedicated and responsive team ensures a seamless experience, exceeding our expectations! 
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-4 ">
+              <div class="flex-shrink-0">
+                <img src="images/avatar02.png" alt="..." class="rounded-circle avatar border">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="fw-bold">Jessica Lewis</div>
+                <div>Marketing Manager - Brand</div>
+              </div>
             </div>
-            <div class="text-center powered">Powered by <a href="#">Metaspheres Technologies</a></div>
-         </div>
-      </footer>
-      <!-- Footer END -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script>
-         $(document).ready(function() {
-           $('.block-addons').click(function() {
-             $(this).toggleClass('selected');
-           });
-         });
-      </script>
-   </body>
+          </div>
+        </div>
+      </div>
+      <div class="item p-1">
+        <div class="card shadow-sm">
+          <div class="card-body py-4">
+            <img src="images/quote_icon.png" alt="..." class="quote_icon pb-3">
+            <p class="card-text"> 
+              No other platform compares. Their attention to detail, reliable communication, and ability to match us with influential creators have made all the difference! 
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-4 ">
+              <div class="flex-shrink-0">
+                <img src="images/avatar03.png" alt="..." class="rounded-circle avatar border">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="fw-bold">Peter Gibson</div>
+                <div>Marketing Director - Brand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Brands loves end -->
+<!-- Creator -->
+<section class="creator_sec pb-5">
+  <div class="container">
+    <div class="creator_block1 py-5">
+      <div class="row">
+        <div class="col-md-6 order-2 order-sm-1 d-flex justify-content-center flex-column">
+          <h2 class="title_head mb-0 fw-bold">
+            As a <span class="text-muted">creator</span>
+          </h2>
+          <h3 class="title_head">unlock exclusive benefits</h3>
+          <p class="lead mt-3"> 
+            Enjoy complimentary access to a wide range of offers including dinners, brunches, spa and wellness centers, salons, hotel stays, weekend getaways, shopping centers, and more, all while growing your social media presence. 
+          </p>
+          <div class="d-flex  als_sm_btn flex-column flex-sm-row pt-4">
+            <button class="btn btn-dark rounded-pill btn-sm primary_btn" type="submit"> 
+              Sign up 
+            </button>
+            <button class="btn btn-dark rounded-pill btn-sm secondary_btn" type="submit"> 
+              Learn more 
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 order-1 order-sm-1 mb-5 mb-sm-0">
+          <div class="text-center">
+            <img src="images/creator_aside.png" class="w-75">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="creator_block2">
+      <h2 class="title_head mb-0 text-center fw-bold pb-5">Creators love us</h2>
+      <div class="owl-carousel owl-theme">
+        <div class="item p-1">
+          <div class="card">
+            <div class="card-body py-4">
+              <img src="images/quote_icon_white.png" alt="..." class="quote_icon pb-3">
+              <p class="card-text mt-3"> 
+                Our go-to platform for influencer collaborations. Their dedicated and responsive team ensures a seamless experience, exceeding our expectations! 
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-4 flex-column ">
+                <div class="flex-shrink-0">
+                  <img src="images/avatar04.png" alt="..." class="rounded-circle border w-75 m-auto">
+                </div>
+                <div class="text-center">
+                  <div class="fw-bold mt-2">Alison Wilson</div>
+                  <div class="mt-2 social_ico_owl">
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-tiktok"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item p-1">
+          <div class="card">
+            <div class="card-body py-4">
+              <img src="images/quote_icon_white.png" alt="..." class="quote_icon pb-3">
+              <p class="card-text mt-3"> 
+                Our go-to platform for influencer collaborations. Their dedicated and responsive team ensures a seamless experience, exceeding our expectations! 
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-4 flex-column ">
+                <div class="flex-shrink-0">
+                  <img src="images/avatar05.png" alt="..." class="rounded-circle border w-75 m-auto">
+                </div>
+                <div class="text-center">
+                  <div class="fw-bold mt-2">Jessica Lewis</div>
+                  <div class="mt-2 social_ico_owl">
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-twitch"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item p-1">
+          <div class="card">
+            <div class="card-body py-4">
+              <img src="images/quote_icon_white.png" alt="..." class="quote_icon pb-3">
+              <p class="card-text mt-3"> 
+                Our go-to platform for influencer collaborations. Their dedicated and responsive team ensures a seamless experience, exceeding our expectations! 
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-4 flex-column ">
+                <div class="flex-shrink-0">
+                  <img src="images/avatar06.png" alt="..." class="rounded-circle border w-75 m-auto">
+                </div>
+                <div class="text-center">
+                  <div class="fw-bold mt-2">Emily Watson</div>
+                  <div class="mt-2 social_ico_owl">
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-youtube"></i>
+                      </a>
+                    </span>
+                    <span class="mx-1">
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Creator end-->
+  <section class="blog py-5">
+    <div class="container">
+      <h2 class="title_head mb-0 text-center fw-bold pb-5">Latest in influencer marketing</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card  border-0">
+            <img src="https://img.freepik.com/free-photo/hand-arrange-white-letters-brand_1384-104.jpg" alt="..." class="">
+            <div class="card-body p-0">
+              <div class="date">JUNE 9, 2023</div>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <a href=""> Read more <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card  border-0">
+            <img src="https://img.freepik.com/free-photo/hand-arrange-white-letters-as-growth_1384-23.jpg" alt="..." class="">
+            <div class="card-body p-0">
+              <div class="date">JUNE 4, 2023</div>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <a href="">Read more <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card  border-0">
+            <img src="https://img.freepik.com/free-photo/arrange-white-letters-strategy_1384-212.jpg" alt="..." class="">
+            <div class="card-body p-0">
+              <div class="date">MAY 25, 2023</div>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <a href="">Read more <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Creator end-->
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row row-cols-5 py-5 mx-5">
+        <div class="col-12 col-sm-3">
+          <img src="https://cms.alist.ae/uploads/logo_1_a3c028cd19.png" class="foot_logo">
+          <p class="text-muted">©2023 alist.ae. All rights reserved.</p>
+          <div class="">
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <h5>Brands</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-3">
+          <h5>Creators</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-3">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Careers</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- && script && -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
 </html>
